@@ -1,0 +1,23 @@
+[user]
+	name = tkcizumi
+	email = tkc.izumi@gmail.com
+[pull]
+	rebase = true
+[merge]
+	ff = false
+	tool = opendiff
+[core]
+	excludesfile = $HOME/.gitignore_global
+[alias]
+	co = commit
+	st = status
+	ch = checkout
+	br = branch
+[diff]
+	tool = opendiff
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path =
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
