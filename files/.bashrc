@@ -12,3 +12,7 @@ fi
 if [ -f $HOME/.git-completion.bash ]; then
     source $HOME/.git-completion.bash
 fi
+
+
+##### init nodenv #####
+eval "$(nodenv init -)"
