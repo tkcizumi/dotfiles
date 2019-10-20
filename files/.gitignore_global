@@ -1,8 +1,6 @@
 ##### START For Eclipse #####
 
-*.pydevproject
-.metadata
-.gradle
+*.metadata
 bin/
 tmp/
 *.tmp
@@ -12,6 +10,7 @@ tmp/
 local.properties
 .settings/
 .loadpath
+.recommenders
 
 # External tool builders
 .externalToolBuilders/
@@ -19,17 +18,43 @@ local.properties
 # Locally stored "Eclipse launch configurations"
 *.launch
 
-# CDT-specific
+# PyDev specific (Python IDE for Eclipse)
+*.pydevproject
+
+# CDT-specific (C/C++ Development Tooling)
 .cproject
 
-# PDT-specific
+# CDT- autotools
+.autotools
+
+# Java annotation processor (APT)
+.factorypath
+
+# PDT-specific (PHP Development Tools)
 .buildpath
 
 # sbteclipse plugin
 .target
 
+# Tern plugin
+.tern-project
+
 # TeXlipse plugin
 .texlipse
+
+# STS (Spring Tool Suite)
+.springBeans
+
+# Code Recommenders
+.recommenders/
+
+# Annotation Processing
+.apt_generated/
+
+# Scala IDE specific (Scala & Java development for Eclipse)
+.cache-main
+.scala_dependencies
+.worksheet
 
 ##### END For Eclipse #####
 
@@ -159,3 +184,14 @@ xcuserdata/
 *.xcscmblueprint
 
 ##### END For Xcode #####
+
+
+##### START For Visual Studio Code #####
+
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+##### END For Visual Studio Code #####

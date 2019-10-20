@@ -6,3 +6,13 @@ export PATH="/usr/local/opt/go@1.7/bin:$PATH:/usr/local/opt/go@1.7/libexec/bin:$
 
 ##### For tomcat #####
 export PATH="/usr/local/opt/tomcat@7/bin:$PATH"
+
+##### Initialization for FDK command line tools.Fri Mar 31 00:11:26 2017 #####
+FDK_EXE="$HOME/bin/FDK/Tools/osx"
+PATH=${PATH}:"$HOME/bin/FDK/Tools/osx"
+export PATH
+export FDK_EXE
+
+
+##### For nvm #####
+export NVM_DIR="$HOME/.nvm"

@@ -1,3 +1,9 @@
 alias ll="ls -la"
+alias "hosts"="sudo vi /private/etc/hosts"
+alias "ip"='ifconfig | grep -A 2 3c:15:c2:c1:5f:9e | grep -o "inet\s[0-9]\{1,3\}\.[0-9]\{1,3\}\.[0-9]\{1,3\}\.[0-9]\{1,3\}" | grep -o "[0-9]\{1,3\}\.[0-9]\{1,3\}\.[0-9]\{1,3\}\.[0-9]\{1,3\}" | pbcopy && echo "`pbpaste`"'
+
+SATORI_WORKSPACE="$HOME/satori/uranai-server";
+alias "satori-clean"="rm -rf $SATORI_WORKSPACE/uranai-core/target && rm -rf $SATORI_WORKSPACE/uranai-web/target && rm -rf $SATORI_WORKSPACE/uranai-admin/target"
 alias "satori-web"="mvn tomcat7:run -pl :uranai-web -am -Plocal"
 alias "satori-admin"="mvn tomcat7:run -pl :uranai-admin -am -Plocal"
+alias "satori-port"="ssh -v -N  -L localhost:13306:dev-aurora.cluster-cg1aalwiarhi.ap-northeast-1.rds.amazonaws.com:3306 -L localhost:23306:dev-aurora.cluster-cg1aalwiarhi.ap-northeast-1.rds.amazonaws.com:3306 -L localhost:1121:dev-memcached.5rljvx.0001.apne1.cache.amazonaws.com:11211 -o ConnectTimeout=15 -o ServerAliveInterval=30 -o ServerAliveCountMax=3 -i /Users/tkcizumi/.ssh/id_rsa -p 55222 izumi_takeshi@13.114.217.203"
