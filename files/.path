@@ -13,6 +13,8 @@ PATH=${PATH}:"$HOME/bin/FDK/Tools/osx"
 export PATH
 export FDK_EXE
 
-
 ##### For nvm #####
-export NVM_DIR="$HOME/.nvm"
+# export NVM_DIR="$HOME/.nvm"
+
+##### For nodenv #####
+export NODE_BUILD_DEFINITIONS="/usr/local/opt/node-build-update-defs/share/node-build"
