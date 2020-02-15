@@ -21,3 +21,6 @@ export NODE_BUILD_DEFINITIONS="/usr/local/opt/node-build-update-defs/share/node-
 
 ##### For Maven #####
 export PATH="/usr/local/opt/maven@3.5/bin:$PATH"
+
+##### For gettext #####
+export PATH="/usr/local/opt/gettext/bin:$PATH"
