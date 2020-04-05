@@ -19,6 +19,10 @@ export FDK_EXE
 ##### For nodenv #####
 export NODE_BUILD_DEFINITIONS="/usr/local/opt/node-build-update-defs/share/node-build"
 
+##### For OpenJDK #####
+export JAVA_HOME=`/usr/libexec/java_home -v 1.8`
+export PATH=$JAVA_HOME/bin:$PATH
+
 ##### For Maven #####
 export PATH="/usr/local/opt/maven@3.5/bin:$PATH"
 
