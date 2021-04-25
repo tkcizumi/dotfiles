@@ -46,8 +46,7 @@ fi
 
 
 ##### for git completion #####
-if [ -e ~/.zsh/git-prompt.sh -a -e ~/.zsh/git-completion.bash ]; then
-    echo "TEST"
+if [ -e ~/.zsh/git-prompt.sh -a -e ~/.zsh/git-completion.bash -a -e ~/.zsh/_git ]; then
     source ~/.zsh/git-prompt.sh
 
     fpath=(~/.zsh $fpath)
