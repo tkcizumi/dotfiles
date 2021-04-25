@@ -1,0 +1,5 @@
+##### import .zshrc #####
+
+test -r ~/.zshrc && . ~/.zshrc
+
+##### //import .zshrc #####
