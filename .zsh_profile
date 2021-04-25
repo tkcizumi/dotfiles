@@ -1,0 +1,13 @@
+##### import .path #####
+
+test -r ~/.path && . ~/.path
+
+##### //import .bashrc #####
+
+
+
+##### import .zshrc #####
+
+test -r ~/.zshrc && . ~/.zshrc
+
+##### //import .zshrc #####
